@@ -8,10 +8,44 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <div class="banner">
         <div class="slider">
-            <img src="" alt="Queens">
+            <img src="/Images/1.jpg" id="slideImg" alt="Queens">
+        </div>
+        <div class="overlay">
+            <div class="navbar">
+                <img src="/Images/Music_symbol.png" class="image" alt="Music Symbol">
+                <h1 class="heading">Music</h1>
+             <div class="menu_icons">
+                <ul>
+                    <li><a href="#" id="Queen" onclick="Queen()">Queen</a></li>
+                    <li><a href="#" id="Gorillaz" onclick="Gorillaz()">The Gorillaz</a></li>
+                    <li><a href="#">List1</a></li>
+                    <li><a href="#">List1</a></li>
+                </ul>
+             </div>
+            </div> 
+
         </div>
     </div>
+    <script>
+        var slideImg=document.getElementById("slideImg");
+        var images =new Array(
+                "/Images/1.jpg",
+                "/Images/2.jpg",
+                "/Images/3.jpg",
+                "/Images/4.jpg"
+        );
+        function Queen() {
+            
+            slideImg.src=images[1];
+        }
+        function Gorillaz()
+        {
+            slideImg.src=images[2];
+        }
+
+    </script>
 </body>
 </html>
