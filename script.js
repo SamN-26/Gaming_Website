@@ -1,1 +1,0 @@
-var slideImg = document.getElementById("")

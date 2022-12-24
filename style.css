@@ -2,7 +2,16 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Times New Roman', Times, serif;
+}
+
+@font-face {
+    font-family: Press_start;
+    src: url(/Fonts/Press_start/PressStart2P-Regular.ttf);
+}
+
+@font-face {
+    font-family:PlayFair;
+    src: url(/Fonts/PlayFair/PlayfairDisplaySC-Black.ttf);
 }
 
 .banner{
@@ -61,20 +70,20 @@
 }
 
 #img1 {
-    animation-delay: 0s;
+    animation-delay: 24s;
     background-image: url('/Images/Background_1.jpg');
   }
 #img2{
-    background-image: url('/Images/Background_2.jpg');
-    animation-delay: 8s;
+    background-image: url('/Images/Background_2.png');
+    animation-delay: 16s;
   }
 #img3{
     background-image: url('/Images/Background_3.jpg');
-    animation-delay: 16s;
+    animation-delay: 8s;
   }
 #img4{
     background-image: url('/Images/Background_4.png');
-    animation-delay: 24s;
+    animation-delay: 0s;
 }
 
 .overlay{
@@ -82,14 +91,7 @@
     height: 100vh;
     position:absolute;
     top:0;
-    background:linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0));
-}
-
-.image{
-    transition: opacity 1s ease-in-out;
-    cursor:pointer;
-    width:50px;
-    height: 50px;
+    /*background:linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0));*/
 }
 
 .navbar{
@@ -107,7 +109,53 @@ ul{
 }
 .heading{
     color: aliceblue;
+    font-family:PlayFair;
+    font-size: 10vh;
 }
+
+.colorChange{
+    font-family: PlayFair;
+    font-weight: bolder;
+    animation: colorChange 34s ease-in-out infinite;
+
+}
+
+@-webkit-keyframes colorChange{
+    0%{
+        color: #FF8243;
+    }
+    25%{
+        color: #379237;
+    }
+    50%{
+        color:#3AB4F2;
+    }
+    75%{
+        color: #A5F1E9;
+    }
+    100%{
+        color: #FF8243;
+    }
+}
+
+@keyframes colorChange{
+    0%{
+        color: #FF8243;
+    }
+    25%{
+        color: #379237;
+    }
+    50%{
+        color:#3AB4F2;
+    }
+    75%{
+        color: #A5F1E9;
+    }
+    100%{
+        color: #FF8243;
+    }
+}
+
 li{
     padding:10px;
     float:right;
