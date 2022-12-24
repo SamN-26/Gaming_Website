@@ -36,8 +36,20 @@
                  </ul>
                 </div>
             </div> 
+            <div class="typed">
+                <p><span class="typing colorChange" style="font-size: 5vh; font-family: Press_start"></span></p>
+            </div>
         </div> 
     </div>
-    <script src="/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".typing",{
+            strings: ["Up Up", "Down Down","Left Right", "B A", "Start"], 
+            typeSpeed: 250,
+            backSpeed: 250,
+            loop: true
+        }
+        );
+    </script>
 </body>
 </html>
