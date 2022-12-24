@@ -1,9 +1,4 @@
 
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
-
 *{
     margin: 0;
     padding: 0;
@@ -22,11 +17,64 @@
     height: 100vh;
     position:absolute;
     top: 0;
+    background: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-animation: fade 32s infinite;
+    animation: fade 32s infinite;
 }
 
-#slideImg{
-    width: 100%;
-    height: 100%;
+@-webkit-keyframes fade {
+    0%{
+        opacity: 1;
+    }
+    15.625%{
+        opacity: 1;
+    }
+    25%{
+        opacity: 0;
+    }
+    90.625%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    0%{
+        opacity: 1;
+    }
+    15.625%{
+        opacity: 1;
+    }
+    25%{
+        opacity: 0;
+    }
+    90.625%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+#img1 {
+    animation-delay: 0s;
+    background-image: url('/Images/Background_1.jpg');
+  }
+#img2{
+    background-image: url('/Images/Background_2.jpg');
+    animation-delay: 8s;
+  }
+#img3{
+    background-image: url('/Images/Background_3.jpg');
+    animation-delay: 16s;
+  }
+#img4{
+    background-image: url('/Images/Background_4.png');
+    animation-delay: 24s;
 }
 
 .overlay{

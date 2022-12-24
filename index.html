@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+   
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,42 +11,24 @@
 <body>
 
     <div class="banner">
-        <div class="slider">
-            <img src="/Images/1.jpg" id="slideImg" alt="Queens">
-        </div>
-        <div class="overlay">
+            <div class="slider" id="img1"></div>
+            <div class="slider" id="img2"></div>
+            <div class="slider" id="img3"></div>
+            <div class="slider" id="img4"></div>
+         <div class="overlay">
             <div class="navbar">
-                <img src="/Images/Music_symbol.png" class="image" alt="Music Symbol">
-                <h1 class="heading">Music</h1>
-             <div class="menu_icons">
-                <ul>
-                    <li><a href="#" id="AOC" onclick="Queen()">Queen</a></li>
-                    <li><a href="#" id="BFV" onclick="Gorillaz()">The Gorillaz</a></li>
+                <h1 class="heading">Gaming</h1>
+                <div class="menu_icons">
+                 <ul>
+                    <li><a href="#" id="AOC">Assassins</a></li>
+                    <li><a href="#" id="BFV">BFV</a></li>
                     <li><a href="#">List1</a></li>
                     <li><a href="#">List1</a></li>
-                </ul>
-             </div>
+                   </ul>
+                </div>
             </div> 
-
-        </div>
+        </div> 
     </div>
-    <script>
-        var slideImg=document.getElementById("slideImg");
-        var images =new Array(
-                "/Images/1.jpg",
-                "/Images/2.jpg",
-                "/Images/3.jpg",
-                "/Images/4.jpg"
-        );
-        function Queen() {
-            
-            slideImg.src=images[1];
-        }
-        function Gorillaz()
-        {
-            slideImg.src=images[2];
-        }
-
-    </script>
+    <script src="/script.js"></script>
 </body>
 </html>
