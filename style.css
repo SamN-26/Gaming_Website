@@ -3,7 +3,18 @@
     margin: 0;
     padding: 0;
 }
-
+@font-face {
+    font-family: Assassins;
+    src: url(/Fonts/AssassinsCreed/Assassins.ttf);
+}
+@font-face {
+    font-family: BattleField;
+    src: url(/Fonts/BattleField/BattleField.ttf);
+}
+@font-face {
+    font-family: Skyrim;
+    src: url(/Fonts/Skyrim/Skyrim2.ttf);
+}
 @font-face {
     font-family: Press_start;
     src: url(/Fonts/Press_start/PressStart2P-Regular.ttf);
@@ -116,7 +127,7 @@ ul{
 .colorChange{
     font-family: PlayFair;
     font-weight: bolder;
-    animation: colorChange 34s ease-in-out infinite;
+    animation: colorChange 32s ease-in-out infinite;
 
 }
 
@@ -163,20 +174,36 @@ li{
 
 li a{
     display: block;
-    color:aliceblue;
-    background-color:blue;
     text-align: center;
     text-decoration: none;
-}
-
-li a:hover{
-    background-color: black;
 }
 
 .menu_icons
 {   
     flex:1;
+    float:right;
     align-items: center;
     text-align: right;
-    color: blueviolet;
+}
+.skyrim{
+    padding-top: 25%;
+    padding-left:20%;
+    padding: right 10px;
+    font-family: Skyrim;
+    font-size: 50px;
+    color:#FF8243;
+}
+.ACO{
+    font-family: Assassins;
+    font-size: 50px;
+    padding-top: 10%;
+    padding-left: 30%;
+    color:#379237;
+}
+.battlefield{
+    font-family: BattleField;
+    font-size: 50px;
+    padding-top:10%;
+    padding-left:60%;
+    color: #3AB4F2;
 }
